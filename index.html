@@ -1,13 +1,71 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My blog</title>
+    <link rel="stylesheet" type="text/css"
+     href="styles.css">
+  </head>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+ <body>
+  <div id="header">
+    <div class="container">
+      <a id="header-title" href="index.html">My Blog</a>
+      <ul id="header-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="malto:niks.linis2@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content">
+     <div class="post-container">
+       <div class="post">...</div>
+         <div class="post-author">
+           <div class="post">... </div>
+         </div>
+       </div>
+           <img src="mom.png">
+           <span>My Mom</span>
+        <p class="post-date">Today</p>
+        <h3 class="post-title">Is my child a prodigy?</h3>
+        <div class="post-content">
+          <p> if someone would have told me a week ago that I would be able
+             to make a <strong>webside</strong>, I would not have believe them.</p>
+          <p>Just a few days latter, I came across <a href="https://getmimo.com"> Mimo</a>
+             and started to work on a <em>real</em> blog.</p>
+           <img src="me.png">
+           <span>Me</span>
+
+        <p class="post-date">Today</p>
+        <h3 class="post-title">Becoming a web developer</h3>
+        <div class="post-content">
+          <p> if someone would have told me a week ago that I would be able
+             to make a <strong>webside</strong>, I would not have believe them.</p>
+          <p>Just a few days latter, I came across <a href="https://getmimo.com"> Mimo</a>
+             and started to work on a <em>real</em> blog.</p>
+        </div>
+      </div>
+    </div>
+
+  <div id="footer">
+     <div class="container">
+
+       <div class="column">
+         <h4>My Links</h4>
+         <p>
+          <a href="https://twitter.com">Twitter</a>
+          <br>
+          <a href="https://facebook.com">Facebook</a>
+        </p>
+       </div>
+
+      <div  class="column">
+         <h4>My Story</h4>
+         <p>Čau! es esmu gudrs itkā</p>
+      </div>
+
+    </div>
+   </div>
+
+  </body>
+</html>
